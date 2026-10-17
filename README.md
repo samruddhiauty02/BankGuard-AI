@@ -85,6 +85,12 @@ flowchart TD
 
 *Note: This is a conceptual architecture based on the current project structure. The actual request flow and implemented security behavior should be verified against the source code.*
 
+## 📸 Application Screenshots
+
+### Login Page
+
+![BankGuard AI Login Page](docs/login-page.png)
+
 ## ⚙️ Getting Started
 
 ### Prerequisites
