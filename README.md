@@ -49,6 +49,41 @@ BankGuard-AI/
 ├── mvnw.cmd
 └── README.md
 ```
+## 🏛️ System Architecture
+
+The following diagram illustrates the main components of BankGuard AI and their conceptual relationships.
+
+```mermaid
+flowchart TD
+    A["👤 User"] --> B["💻 HTML Login & Registration Pages"]
+    B --> C["☕ Spring Boot Application"]
+    C --> D["🛡️ Spring Security Configuration"]
+    C --> E["Authentication Controller"]
+    E --> F["Authentication Service"]
+    F --> G["User Repository"]
+    G --> H[("🗄️ MySQL Database")]
+
+    style A fill:#E3F2FD,stroke:#1565C0,color:#000
+    style B fill:#E8F5E9,stroke:#2E7D32,color:#000
+    style C fill:#FFF3E0,stroke:#EF6C00,color:#000
+    style D fill:#F3E5F5,stroke:#7B1FA2,color:#000
+    style E fill:#EDE7F6,stroke:#512DA8,color:#000
+    style F fill:#E0F7FA,stroke:#00838F,color:#000
+    style G fill:#FFF8E1,stroke:#FF8F00,color:#000
+    style H fill:#FCE4EC,stroke:#C2185B,color:#000
+```
+
+### Architecture Components
+
+- **User Interface:** HTML pages for login and registration.
+- **Spring Boot Application:** Handles backend application logic.
+- **Spring Security:** Provides the application's security configuration.
+- **Authentication Controller:** Handles authentication-related requests.
+- **Authentication Service:** Contains authentication-related business logic.
+- **User Repository:** Manages database access.
+- **MySQL Database:** Stores application data.
+
+*Note: This is a conceptual architecture based on the current project structure. The actual request flow and implemented security behavior should be verified against the source code.*
 
 ## ⚙️ Getting Started
 
