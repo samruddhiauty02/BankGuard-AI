@@ -91,6 +91,14 @@ flowchart TD
 
 ![BankGuard AI Login Page](docs/login-page.png)
 
+### Registration Page
+
+![BankGuard AI Registration Page](docs/registration-page.png)
+
+### Unlock Page
+
+![BankGuard AI Unlock Page](docs/unlock-page.png)
+
 ## ⚙️ Getting Started
 
 ### Prerequisites
