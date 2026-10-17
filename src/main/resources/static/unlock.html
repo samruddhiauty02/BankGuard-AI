@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unlock Account</title>
+</head>
+<body>
+
+<h2>Unlock Account</h2>
+
+<input type="email" id="email" placeholder="Enter Email"><br><br>
+
+<button onclick="unlock()">Unlock</button>
+
+<p id="result"></p>
+
+<script>
+function unlock() {
+    const email = document.getElementById("email").value;
+
+    fetch(`http://localhost:8080/api/auth/unlock?email=${email}`, {
+        method: "POST"
+    })
+    .then(res => res.text())
+    .then(data => document.getElementById("result").innerText = data);
+}
+</script>
+
+</body>
+</html>
